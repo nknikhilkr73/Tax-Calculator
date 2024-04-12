@@ -1,0 +1,40 @@
+form {
+  border: 1px solid rgb(138, 131, 131);
+  padding: 2rem;
+}
+label {
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.error-icon {
+  position: absolute;
+  top: 70%;
+  right: 10px;
+  /*Adjustthisvalueasneeded*/
+  transform: translateY(-50%);
+  color: red;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  padding-bottom: 22px;
+  background-color: rgb(198, 196, 194);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.error-icon.blink {
+  animation: blink 0.7s 2;
+}
